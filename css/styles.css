@@ -1,0 +1,168 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка сайта */
+.header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e74c3c;
+}
+
+/* Секции */
+.section {
+    background: #fff;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Продолжение стилей */
+.skills-list li {
+    background: #f8f8f8;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.skills-list li:hover {
+    background: #e7f3ff;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.github-link:hover {
+    background: #e74c3c;
+}
+
+/* Секция контактов */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Футер */
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Стили для изображения профиля */
+.profile-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 2px solid #2c3e50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+    }
+    
+    .header h1, .navbar {
+        float: none;
+        text-align: center;
+    }
+    
+    .section {
+        padding: 30px 0;
+    }
+   
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .github-link {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+     .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
